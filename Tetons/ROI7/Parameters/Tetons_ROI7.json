@@ -1,0 +1,21 @@
+{	
+	"geodata": {
+		"title" :         "Tetons region#7",
+		"dtm_file" :      "Tetons_ROI7_res6m_fillsinks0p2.tif",
+		"basins_file" :   "Tetons_ROI7_res6m_fillsinks0p2_basins.tif",
+		"data_path" :     [ "$SLMDATA", "Tetons", "ROI7" ],
+		"export_path" :   [ "$SLMXPT",  "Tetons", "ROI7" ],
+		"do_clip_roi" :   false,
+        "roi_x_bounds" :  [20,1050],
+        "roi_y_bounds" :  [340,2000],
+		"basins" :          [315 ],
+		"do_basin_masking": true
+	},
+	
+	"plot": {
+        "mhsl_pdf_x_stretch" : 1.2,
+        "contour_label_fontsize" : 3,
+        "do_plot_hsl_contours" : false,
+        "do_plot_aspect_contours" : false
+	}
+}

@@ -1,0 +1,30 @@
+{	
+	"geodata": {
+		"title" :         "Tetons region#5",
+		"dtm_file" :      "Tetons_ROI5_res3m_fillsinks0p2.tif",
+		"basins_file" :   "Tetons_ROI5_res3m_fillsinks0p2_basins.tif",
+		"data_path" :     [ "$SLMDATA", "Tetons", "ROI5" ],
+		"export_path" :   [ "$SLMXPT",  "Tetons", "ROI5" ],
+		"do_clip_roi" :   false,
+        "roi_x_bounds" :  [20,1050],
+        "roi_y_bounds" :  [340,2000],
+		"basins" :          [361],
+		"do_basin_masking": true
+	},
+
+	"mapping": {
+		"coarse_segmentation_threshold" : 100,
+		"coarse_channel_threshold"      : 100,
+		"midslope_filter_sigma"         : 80,
+		"ridge_filter_sigma"            : 20,
+		"ridge_threshold"               : 0.4,
+		"do_skip_hsl" : true
+    },
+    
+	"plot": {
+        "mhsl_pdf_x_stretch" : 1.2,
+        "contour_label_fontsize" : 3,
+        "do_plot_hsl_contours" : false,
+        "do_plot_aspect_contours" : false
+	}
+}
