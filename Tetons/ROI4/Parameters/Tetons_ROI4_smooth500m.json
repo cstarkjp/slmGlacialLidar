@@ -3,8 +3,7 @@
 		"title" :         "Tetons region#4",
 		"dtm_file" :      "Tetons_ROI4_res3m_fillsinks0p2.tif",
 		"basins_file" :   "Tetons_ROI4_res3m_fillsinks0p2_basins.tif",
-		"data_path" :     [ "$SLMDATA", "Tetons", "ROI4" ],
-		"export_path" :   [ "$SLMXPT",  "Tetons", "ROI4" ],
+		"data_path" :     [ "$SLMDATALIDAR", "Tetons", "ROI4" ],
 		"do_clip_roi" :   false,
 		"basins" :          [848],
 		"do_basin_masking": true
@@ -21,6 +20,9 @@
 	},
 	
 	"mapping": {
+		"do_pass1" : true,
+		"do_pass2" : false,
+		"do_pass3" : false,
 		"coarse_segmentation_threshold" : 100,
 		"coarse_channel_threshold"      : 100,
 		"midslope_filter_sigma"         : 83.3333333333333333,
@@ -30,6 +32,13 @@
     },
     
 	"plot": {
+		"do_plot_midslope_elevations_pdf" : true,
+		"do_plot_slope_angles_pdf" : true,
+		"do_plot_hsl" : false,
+		"do_plot_hsl_contoured" : false,
+		"do_plot_hsl_distributions" : false,
+		"do_plot_aspect" : false,
+		"do_plot_hsl_aspect_distribution" : false,
         "mhsl_pdf_x_stretch" : 1.2,
         "contour_label_fontsize" : 3,
         "do_plot_hsl_contours" : false,
