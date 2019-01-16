@@ -6,7 +6,8 @@
 		"data_path" :     [ "$SLMDATALIDAR", "Tetons", "ROI4" ],
 		"do_clip_roi" :   false,
 		"basins" :          [848],
-		"do_basin_masking": true
+		"do_basin_masking": true,
+		"latlong_wgs84": [43.849644, -110.829705]
 	},
 	
 	"analysis": {
